@@ -48,4 +48,4 @@ def test_parsing_multiple_items(benchmark):
         for item in elements:
             from_dict(data_class=data_class, data=item)
 
-    benchmark(parse_iterable, classes.LongUnion, [data.long_union_data] * 200)
+    benchmark(parse_iterable, classes.LongUnion, [data.long_union_data] * 201)
