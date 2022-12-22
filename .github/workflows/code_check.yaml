@@ -44,8 +44,7 @@ jobs:
           github-token: ${{ secrets.benchmark_token }}
           auto-push: ${{ inputs.publish_performance }}
           benchmark-data-dir-path: performance/${{ matrix.python-version }}
-          comment-always: true
+          comment-always: false
           alert-threshold: '130%'
           comment-on-alert: true
           fail-on-alert: true
-          fail-threshold: '150%'
